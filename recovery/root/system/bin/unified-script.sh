@@ -26,6 +26,30 @@ load_op8t()
     resetprop "ro.product.vendor.name" "OnePlus8T"
 }
 
+load_opnordce()
+{
+    resetprop "ro.build.product" "OnePlusNordCE"
+    resetprop "ro.display.series" "OnePlus Nord CE"
+    resetprop "ro.product.device" "OnePlusNordCE"
+    resetprop "ro.product.model" "OnePlus Nord CE"
+    resetprop "ro.product.name" "OnePlusNordCE"
+    resetprop "ro.product.odm.device" "OnePlusNordCE"
+    resetprop "ro.product.odm.model" "OnePlus Nord CE"
+    resetprop "ro.product.odm.name" "OnePlusNordCE"
+    resetprop "ro.product.product.device" "OnePlusNordCE"
+    resetprop "ro.product.product.model" "OnePlus Nord CE"
+    resetprop "ro.product.product.name" "OnePlusNordCE"
+    resetprop "ro.product.system.device" "OnePlusNordCE"
+    resetprop "ro.product.system.model" "OnePlus Nord CE"
+    resetprop "ro.product.system.name" "OnePlusNordCE"
+    resetprop "ro.product.system_ext.device" "OnePlusNordCE"
+    resetprop "ro.product.system_ext.model" "OnePlus Nord CE"
+    resetprop "ro.product.system_ext.name" "OnePlusNordCE"
+    resetprop "ro.product.vendor.device" "OnePlusNordCE"
+    resetprop "ro.product.vendor.model" "OnePlus Nord CE"
+    resetprop "ro.product.vendor.name" "OnePlusNordCE"
+}
+
 load_op9r()
 {
     resetprop "ro.build.product" "OnePlus9R"
@@ -57,6 +81,9 @@ case $project in
     lemonades)
         load_op9r
         ;;
+    ebba)
+	load_opnordce
+	;;
     *)
         load_op8t
         ;;
