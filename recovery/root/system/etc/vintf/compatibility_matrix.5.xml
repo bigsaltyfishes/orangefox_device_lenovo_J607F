@@ -508,10 +508,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.vibrator</name>
-        <interface>
-            <name>IVibrator</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>IVibrator/default</fqname>
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.vr</name>
@@ -550,14 +547,6 @@
         <version>1.0-3</version>
         <interface>
             <name>ISupplicant</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.oneplus.hardware.lmvibrator</name>
-        <version>1.0</version>
-        <interface>
-            <name>ILinearMotorVibrator</name>
             <instance>default</instance>
         </interface>
     </hal>

@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_ebba.mk
+    $(LOCAL_DIR)/twrp_J607F.mk
 
